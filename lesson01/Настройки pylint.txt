@@ -1,0 +1,4 @@
+Name: pylint
+Program: C:\Python37\Scripts\pylint.exe
+Arguments: $FileName$
+Working directory: $FileDir$

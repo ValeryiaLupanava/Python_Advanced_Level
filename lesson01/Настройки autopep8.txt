@@ -1,0 +1,5 @@
+Name: Autopep8
+Program: autopep8
+Arguments: --in-place --aggressive --aggressive "$FilePath$"
+Working directory: $ProjectFileDir$
+Output filters: $FILE_PATH$\:$LINE$\:$COLUMN$\:.*
