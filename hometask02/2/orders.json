@@ -1,0 +1,25 @@
+{
+    "orders": [
+        {
+            "buyer": "Иванов И.И.",
+            "data": "24.09.2017",
+            "item": "printer",
+            "price": "6700",
+            "quantity": "10"
+        },
+        {
+            "buyer": "Петров П.П.",
+            "data": "11.01.2018",
+            "item": "scanner",
+            "price": "10000",
+            "quantity": "20"
+        },
+        {
+            "buyer": "Сидоров С.С.",
+            "data": "2.05.2019",
+            "item": "computer",
+            "price": "40000",
+            "quantity": "5"
+        }
+    ]
+}
