@@ -1,8 +1,8 @@
 """Тестирование приложения client"""
 
 import unittest
-from client import create_presence, process_ans
-from common.variables import RESPONSE, DEFAULT_IP_ADDRESS, DEFAULT_PORT
+from lesson05.client import create_presence, process_ans
+from lesson05.common.variables import RESPONSE, DEFAULT_IP_ADDRESS, DEFAULT_PORT
 
 
 

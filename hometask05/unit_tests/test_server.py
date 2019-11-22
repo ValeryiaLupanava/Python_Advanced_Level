@@ -3,8 +3,9 @@
 import unittest
 import time
 import socket
-from server import process_client_message
-from common.variables import ACTION, RESPONSE, PRESENCE, TIME, USER, IP_ADDRESS, HOST, NAME, SURNAME
+from lesson05.server import process_client_message
+from lesson05.common.variables import ACTION, RESPONSE, PRESENCE, \
+    TIME, USER, IP_ADDRESS, HOST, NAME, SURNAME
 
 
 
