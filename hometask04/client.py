@@ -17,7 +17,7 @@ import time
 from common.variables import ACTION, PRESENCE, TIME, \
     USER, RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT, \
     NAME, SURNAME, HOST, IP_ADDRESS
-from lesson03.common.utils import get_message, send_message
+from common.utils import get_message, send_message
 
 
 def create_presence(account_name='Valeryia Lupanava'):
