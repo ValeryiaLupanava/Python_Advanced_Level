@@ -1,0 +1,15 @@
+2019-11-25 13:35:02,906 : INFO     : server.py : Запуск сервера.
+2019-11-25 13:35:02,908 : INFO     : server.py : Используется порт по умолчанию.
+2019-11-25 13:35:02,908 : INFO     : server.py : Используется адрес по умолчанию.
+2019-11-25 13:35:02,910 : INFO     : server.py : Сокет: <socket.socket fd=552, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>.
+2019-11-25 13:36:25,891 : INFO     : server.py : Запуск сервера.
+2019-11-25 13:36:25,892 : INFO     : server.py : Используется порт по умолчанию.
+2019-11-25 13:36:25,892 : INFO     : server.py : Используется адрес по умолчанию.
+2019-11-25 13:36:25,895 : INFO     : server.py : Сокет: <socket.socket fd=648, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>.
+2019-11-25 13:36:31,061 : INFO     : server.py : Начинается соединение с клиентом.
+2019-11-25 13:36:31,062 : INFO     : server.py : Соединение с клиентом <socket.socket fd=552, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59833)> ('127.0.0.1', 59833) установлено.
+2019-11-25 13:36:31,077 : DEBUG    : server.py : Получено сообщение от клиента: {'host': 'hq-nb143', 'ip_address': '10.100.182.110', 'user': {'name': 'Valeryia', 'surname': 'Lupanava'}, 'action': 'presence', 'time': 1574678191.0770986}.
+2019-11-25 13:36:31,078 : INFO     : server.py : Сообщение клиента: {'host': 'hq-nb143', 'ip_address': '10.100.182.110', 'user': {'name': 'Valeryia', 'surname': 'Lupanava'}, 'action': 'presence', 'time': 1574678191.0770986}.
+2019-11-25 13:36:31,078 : DEBUG    : server.py : Ответ клиенту сформирован: {'response': 200}.
+2019-11-25 13:36:31,078 : DEBUG    : server.py : Ответ клиенту отправлен.
+2019-11-25 13:36:31,078 : INFO     : server.py : Соединение с клиентом закрыто.

@@ -12,11 +12,15 @@
 import socket
 import sys
 import json
-from lesson03.common.variables import ACTION, RESPONSE, \
+import logging
+from common.variables import ACTION, RESPONSE, \
     MAX_CONNECTIONS, PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, \
-    RESPONDEFAULT_IP_ADDRESSSE, IP_ADDRESS
-from lesson03.common.utils import get_message, send_message
+    RESPONDEFAULT_IP_ADDRESSSE
+from common.utils import get_message, send_message
+import logs.server_log_config
 
+
+SERVER_LOGGER = logging.getLogger('log_server')
 
 def process_client_message(message):
     '''
@@ -27,8 +31,10 @@ def process_client_message(message):
     :param message:
     :return:
     '''
+
+    SERVER_LOGGER.info(f'Сообщение клиента: {message}.')
     if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
-            and USER in message and message[IP_ADDRESS] == '192.168.0.100':
+            and USER in message:
         return {RESPONSE: 200}
     return {
         RESPONDEFAULT_IP_ADDRESSSE: 400,
@@ -44,54 +50,62 @@ def main():
     :return:
     '''
 
+    SERVER_LOGGER.info('Запуск сервера.')
     try:
         if '-p' in sys.argv:
             listen_port = int(sys.argv[sys.argv.index('-p') + 1])
+            SERVER_LOGGER.info(f'Порт: {listen_port}.')
         else:
             listen_port = DEFAULT_PORT
+            SERVER_LOGGER.info('Используется порт по умолчанию.')
         if listen_port < 1024 or listen_port > 65535:
             raise ValueError
     except IndexError:
-        print('После параметра -\'p\' необходимо указать номер порта.')
+        SERVER_LOGGER.error('После параметра -\'p\' необходимо указать номер порта.')
         sys.exit(1)
     except ValueError:
-        print(
-            'В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
+        SERVER_LOGGER.error('В качастве порта может быть указано только число \
+        в диапазоне от 1024 до 65535.')
         sys.exit(1)
-
-    # Затем загружаем какой адрес слушать
 
     try:
         if '-a' in sys.argv:
             listen_address = sys.argv[sys.argv.index('-a') + 1]
+            SERVER_LOGGER.info(f'Адрес: {listen_address}.')
         else:
             listen_address = ''
-
+            SERVER_LOGGER.info('Используется адрес по умолчанию.')
     except IndexError:
-        print(
-            'После параметра \'a\'- необходимо указать адрес, который будет слушать сервер.')
+        SERVER_LOGGER.error('После параметра \'a\'- необходимо указать адрес, который \
+        будет слушать сервер.')
         sys.exit(1)
 
     # Готовим сокет
 
     transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     transport.bind((listen_address, listen_port))
+    SERVER_LOGGER.info(f'Сокет: {transport}.')
 
     # Слушаем порт
-
     transport.listen(MAX_CONNECTIONS)
 
     while True:
         client, client_address = transport.accept()
+        SERVER_LOGGER.info(f'Начинается соединение с клиентом.')
+        SERVER_LOGGER.info(f'Соединение с клиентом {client} {client_address} установлено.')
         try:
             message_from_clnt = get_message(client)
-            print(message_from_clnt)
+            SERVER_LOGGER.debug(f'Получено сообщение от клиента: {message_from_clnt}.')
             response = process_client_message(message_from_clnt)
+            SERVER_LOGGER.debug(f'Ответ клиенту сформирован: {response}.')
             send_message(client, response)
+            SERVER_LOGGER.debug(f'Ответ клиенту отправлен.')
             client.close()
+            SERVER_LOGGER.info(f'Соединение с клиентом закрыто.')
         except (ValueError, json.JSONDecodeError):
-            print('Принято некорретное сообщение от клиента.')
+            SERVER_LOGGER.error('Принято некорретное сообщение от клиента.')
             client.close()
+            SERVER_LOGGER.info(f'Соединение с клиентом закрыто.')
 
 
 if __name__ == '__main__':
