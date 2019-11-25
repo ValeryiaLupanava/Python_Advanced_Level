@@ -14,7 +14,7 @@ import sys
 import json
 import socket
 import time
-from lesson03.common.variables import ACTION, PRESENCE, TIME, \
+from common.variables import ACTION, PRESENCE, TIME, \
     USER, RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT, \
     NAME, SURNAME, HOST, IP_ADDRESS
 from lesson03.common.utils import get_message, send_message

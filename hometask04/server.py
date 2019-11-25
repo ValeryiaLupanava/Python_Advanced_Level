@@ -12,7 +12,7 @@
 import socket
 import sys
 import json
-from lesson03.common.variables import ACTION, RESPONSE, \
+from common.variables import ACTION, RESPONSE, \
     MAX_CONNECTIONS, PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, \
     RESPONDEFAULT_IP_ADDRESSSE, IP_ADDRESS
 from lesson03.common.utils import get_message, send_message
@@ -28,7 +28,7 @@ def process_client_message(message):
     :return:
     '''
     if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
-            and USER in message and message[IP_ADDRESS] == '192.168.0.100':
+            and USER in message:
         return {RESPONSE: 200}
     return {
         RESPONDEFAULT_IP_ADDRESSSE: 400,
