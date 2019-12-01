@@ -25,26 +25,6 @@ from decorator import log
 
 CLIENT_LOGGER = logging.getLogger('log_client')
 
-
-@log
-def create_presence(account_name='Valeryia Lupanava'):
-    '''
-    Функция генерирует запрос о присутствии клиента
-    :param account_name:
-    :return:
-    '''
-    msg_to_server = {
-        HOST: socket.gethostname(),
-        IP_ADDRESS: socket.gethostbyname(socket.gethostname()),
-        USER: {
-            NAME: account_name.split(' ')[0],
-            SURNAME: account_name.split(' ')[1]
-        },
-        ACTION: PRESENCE,
-        TIME: time.time()
-    }
-    return msg_to_server
-
 @log
 def message_from_server(message):
     """Функция - обработчик сообщений других пользователей, поступающих с сервера"""
@@ -63,8 +43,8 @@ def create_message(sock, account_name='Guest'):
     """Функция запрашивает текст сообщения и возвращает его.
     Так же завершает работу при вводе подобной комманды
     """
-    message = input('Введите сообщение для отправки или \'!!!\' для завершения работы: ')
-    if message == '!!!':
+    message = input('Введите сообщение для отправки или \'quit\' для завершения работы: ')
+    if message.lower() == 'quit':
         sock.close()
         CLIENT_LOGGER.info('Завершение работы по команде пользователя.')
         print('Спасибо за использование нашего сервиса!')
