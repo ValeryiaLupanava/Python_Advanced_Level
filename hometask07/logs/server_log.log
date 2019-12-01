@@ -1,0 +1,439 @@
+2019-12-01 16:18:21,592 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:18:21,595 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:18:21,595 : DEBUG    : decorator.py  : Параметры функции: ().
+2019-12-01 16:18:21,595 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:18:21,595 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:18:21,595 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:18:21,596 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:18:21,596 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:18:21,598 : INFO     : server.py     : Сокет: <socket.socket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:18:21,599 : INFO     : server.py     : Начинается соединение с клиентами.
+2019-12-01 16:19:51,981 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:19:51,983 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:19:51,983 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:19:51,983 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:19:51,983 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:19:51,983 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:19:51,983 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:19:51,983 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:19:51,985 : INFO     : server.py     : Сокет: <socket.socket fd=564, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:19:51,985 : INFO     : server.py     : Начинается соединение с клиентами.
+2019-12-01 16:20:14,500 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=648, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56020)> ('127.0.0.1', 56020) установлено.
+2019-12-01 16:20:15,001 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:20:15,002 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:20:15,002 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=648, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56020)>,) {}.
+2019-12-01 16:20:15,002 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:20:15,002 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:20:15,002 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206414.5006132, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:20:15,003 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:20:15,003 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:20:15,003 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=648, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56020)>, {'response': 200}) {}.
+2019-12-01 16:20:15,004 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:20:15,004 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:20:15,005 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:20:15,005 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:20:15,005 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206414.5006132, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=648, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56020)>) {}.
+2019-12-01 16:20:15,005 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:20:15,005 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:20:15,006 : ERROR    : server.py     : Принято некорретное сообщение от клиента.
+2019-12-01 16:20:15,006 : INFO     : server.py     : Соединение с клиентом закрыто.
+2019-12-01 16:20:15,007 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=648, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56021)> ('127.0.0.1', 56021) установлено.
+2019-12-01 16:21:09,072 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:21:09,076 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:21:09,076 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:21:09,076 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:21:09,076 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:21:09,077 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:21:09,077 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:21:09,077 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:21:09,079 : INFO     : server.py     : Сокет: <socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:21:09,080 : INFO     : server.py     : Начинается соединение с клиентами.
+2019-12-01 16:21:09,099 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56026)> ('127.0.0.1', 56026) установлено.
+2019-12-01 16:21:09,109 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=552, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56027)> ('127.0.0.1', 56027) установлено.
+2019-12-01 16:21:09,111 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:21:09,111 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:21:09,111 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56026)>,) {}.
+2019-12-01 16:21:09,111 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:21:09,112 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:21:09,112 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206469.099324, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:21:09,113 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:21:09,113 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:21:09,114 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56026)>, {'response': 200}) {}.
+2019-12-01 16:21:09,114 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:21:09,115 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:21:09,117 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:21:09,119 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:21:09,120 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206469.099324, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56026)>) {}.
+2019-12-01 16:21:09,123 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:21:09,125 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:21:09,125 : ERROR    : server.py     : Принято некорретное сообщение от клиента.
+2019-12-01 16:21:09,130 : INFO     : server.py     : Соединение с клиентом закрыто.
+2019-12-01 16:21:09,132 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56028)> ('127.0.0.1', 56028) установлено.
+2019-12-01 16:21:28,660 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:21:28,664 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:21:28,664 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:21:28,664 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:21:28,665 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:21:28,665 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:21:28,665 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:21:28,665 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:21:28,668 : INFO     : server.py     : Сокет: <socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:21:28,668 : INFO     : server.py     : Начинается соединение с клиентами.
+2019-12-01 16:21:28,735 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=656, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56032)> ('127.0.0.1', 56032) установлено.
+2019-12-01 16:21:28,800 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=648, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56033)> ('127.0.0.1', 56033) установлено.
+2019-12-01 16:21:28,802 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:21:28,803 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:21:28,803 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=656, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56032)>,) {}.
+2019-12-01 16:21:28,803 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:21:28,803 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:21:28,804 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206488.7357202, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:21:28,805 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:21:28,806 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:21:28,807 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=656, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56032)>, {'response': 200}) {}.
+2019-12-01 16:21:28,807 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:21:28,808 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:21:28,811 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:21:28,811 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:21:28,812 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206488.7357202, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=656, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56032)>) {}.
+2019-12-01 16:21:28,814 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:21:28,814 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:21:28,816 : ERROR    : server.py     : Принято некорретное сообщение от клиента.
+2019-12-01 16:21:28,817 : INFO     : server.py     : Соединение с клиентом закрыто.
+2019-12-01 16:21:28,820 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=636, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56034)> ('127.0.0.1', 56034) установлено.
+2019-12-01 16:22:12,450 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:22:12,455 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:22:12,455 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:22:12,456 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:22:12,456 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:22:12,456 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:22:12,456 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:22:12,456 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:22:12,459 : INFO     : server.py     : Сокет: <socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:22:12,459 : INFO     : server.py     : Начинается соединение с клиентами.
+2019-12-01 16:22:12,479 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56050)> ('127.0.0.1', 56050) установлено.
+2019-12-01 16:22:12,554 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56051)> ('127.0.0.1', 56051) установлено.
+2019-12-01 16:22:12,556 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:22:12,556 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:22:12,557 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56050)>,) {}.
+2019-12-01 16:22:12,557 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:22:12,557 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:22:12,557 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206532.4780505, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:22:12,559 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:22:12,559 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:22:12,559 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56050)>, {'response': 200}) {}.
+2019-12-01 16:22:12,560 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:22:12,561 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:22:12,563 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:22:12,564 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:22:12,566 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206532.4780505, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56050)>) {}.
+2019-12-01 16:22:12,568 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:22:12,571 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:22:12,573 : ERROR    : server.py     : Принято некорретное сообщение от клиента.
+2019-12-01 16:22:12,577 : INFO     : server.py     : Соединение с клиентом закрыто.
+2019-12-01 16:22:12,579 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56052)> ('127.0.0.1', 56052) установлено.
+2019-12-01 16:24:45,278 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:24:45,281 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:24:45,282 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:24:45,282 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:24:45,282 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:24:45,282 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:24:45,282 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:24:45,282 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:24:45,285 : INFO     : server.py     : Сокет: <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:24:45,285 : INFO     : server.py     : Начинается соединение с клиентами.
+2019-12-01 16:24:45,314 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56076)> ('127.0.0.1', 56076) установлено.
+2019-12-01 16:24:45,324 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=620, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56077)> ('127.0.0.1', 56077) установлено.
+2019-12-01 16:24:45,326 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:24:45,326 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:24:45,326 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56076)>,) {}.
+2019-12-01 16:24:45,326 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:24:45,327 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:24:45,327 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206685.3132882, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:24:45,329 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:24:45,329 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:24:45,329 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56076)>, {'response': 200}) {}.
+2019-12-01 16:24:45,329 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:24:45,331 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:24:45,333 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:24:45,334 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:24:45,337 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206685.3132882, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56076)>) {}.
+2019-12-01 16:24:45,338 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:24:45,341 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:24:45,344 : ERROR    : server.py     : Принято некорретное сообщение от клиента.
+2019-12-01 16:24:45,348 : INFO     : server.py     : Соединение с клиентом закрыто.
+2019-12-01 16:24:45,349 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56078)> ('127.0.0.1', 56078) установлено.
+2019-12-01 16:24:59,260 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:24:59,261 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:24:59,261 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:24:59,261 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:24:59,262 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:24:59,262 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:24:59,262 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:24:59,262 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:24:59,263 : INFO     : server.py     : Сокет: <socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:24:59,263 : INFO     : server.py     : Начинается соединение с клиентами.
+2019-12-01 16:25:05,356 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:25:05,360 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:25:05,360 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:25:05,360 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:25:05,361 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:25:05,361 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:25:05,361 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:25:05,362 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:25:05,365 : INFO     : server.py     : Сокет: <socket.socket fd=648, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:25:05,435 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56083)> ('127.0.0.1', 56083) установлено.
+2019-12-01 16:25:05,486 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=616, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56084)> ('127.0.0.1', 56084) установлено.
+2019-12-01 16:25:05,488 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:25:05,488 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:25:05,488 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56083)>,) {}.
+2019-12-01 16:25:05,488 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:25:05,488 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:25:05,488 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206705.4344258, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:25:05,490 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:25:05,490 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:25:05,491 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56083)>, {'response': 200}) {}.
+2019-12-01 16:25:05,491 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:25:05,491 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:25:05,493 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:25:05,493 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:25:05,493 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206705.4344258, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56083)>) {}.
+2019-12-01 16:25:05,493 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:25:05,493 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:25:05,497 : ERROR    : server.py     : Принято некорретное сообщение от клиента.
+2019-12-01 16:25:05,498 : INFO     : server.py     : Соединение с клиентом закрыто.
+2019-12-01 16:25:05,498 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=616, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56085)> ('127.0.0.1', 56085) установлено.
+2019-12-01 16:27:26,390 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:27:26,391 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:26,392 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:27:26,392 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:27:26,392 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:27:26,392 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:27:26,392 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:27:26,392 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:27:26,393 : INFO     : server.py     : Сокет: <socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:27:26,394 : INFO     : server.py     : Начинается соединение с клиентами.
+2019-12-01 16:27:33,834 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:27:33,838 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:33,839 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:27:33,839 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:27:33,839 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:27:33,839 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:27:33,839 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:27:33,839 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:27:33,842 : INFO     : server.py     : Сокет: <socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:27:33,875 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56103)> ('127.0.0.1', 56103) установлено.
+2019-12-01 16:27:33,940 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=624, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56104)> ('127.0.0.1', 56104) установлено.
+2019-12-01 16:27:33,942 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:33,943 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:27:33,943 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56103)>,) {}.
+2019-12-01 16:27:33,943 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:27:33,943 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:27:33,943 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206853.875919, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:27:33,945 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:33,945 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:27:33,945 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56103)>, {'response': 200}) {}.
+2019-12-01 16:27:33,946 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:27:33,946 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:27:33,948 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:33,948 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:27:33,948 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206853.875919, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56103)>) {}.
+2019-12-01 16:27:33,948 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:27:33,948 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:27:33,951 : INFO     : server.py     : Клиент ('127.0.0.1', 56103) отключился от сервера.
+2019-12-01 16:27:33,951 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:27:33,952 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56105)> ('127.0.0.1', 56105) установлено.
+2019-12-01 16:27:33,955 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:33,955 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:27:33,955 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=624, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56104)>,) {}.
+2019-12-01 16:27:33,955 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:27:33,955 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:27:33,956 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206853.9407468, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:27:33,959 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:33,959 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:27:33,960 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=624, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56104)>, {'response': 200}) {}.
+2019-12-01 16:27:33,960 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:27:33,960 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:27:33,963 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:33,964 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:27:33,965 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206853.9407468, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=624, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56104)>) {}.
+2019-12-01 16:27:33,965 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:27:33,966 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:27:33,971 : INFO     : server.py     : Клиент ('127.0.0.1', 56104) отключился от сервера.
+2019-12-01 16:27:33,972 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:27:33,972 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56106)> ('127.0.0.1', 56106) установлено.
+2019-12-01 16:27:33,974 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:33,974 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:27:33,975 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56105)>,) {}.
+2019-12-01 16:27:33,975 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:27:33,975 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:27:33,975 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206853.9527156, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:27:33,978 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:33,979 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:27:33,979 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56105)>, {'response': 200}) {}.
+2019-12-01 16:27:33,980 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:27:33,980 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:27:33,983 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:27:33,984 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:27:33,984 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206853.9527156, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56105)>) {}.
+2019-12-01 16:27:33,984 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:27:33,984 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:28:06,649 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:28:06,649 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:28:06,649 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56105)>,) {}.
+2019-12-01 16:28:06,649 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:28:06,649 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:28:06,649 : DEBUG    : server.py     : Получено сообщение от клиента: {'action': 'message', 'time': 1575206886.6457448, 'account_name': 'Guest', 'message_text': 'Привет'}.
+2019-12-01 16:28:06,650 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:28:06,650 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:28:06,651 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56106)>,) {}.
+2019-12-01 16:28:06,651 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:28:06,651 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:28:06,651 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206853.953713, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:28:06,652 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:28:06,652 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:28:06,652 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56106)>, {'response': 200}) {}.
+2019-12-01 16:28:06,652 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:28:06,653 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:28:06,653 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:28:06,653 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:28:06,654 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206853.953713, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56106)>) {}.
+2019-12-01 16:28:06,654 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:28:06,654 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:28:06,656 : INFO     : server.py     : Клиент ('127.0.0.1', 56106) отключился от сервера.
+2019-12-01 16:28:06,657 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:28:06,657 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56107)> ('127.0.0.1', 56107) установлено.
+2019-12-01 16:28:06,658 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:28:06,658 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:28:06,658 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56107)>,) {}.
+2019-12-01 16:28:06,658 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:28:06,658 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:28:06,658 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575206853.9726615, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:28:06,659 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:28:06,659 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:28:06,659 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56107)>, {'response': 200}) {}.
+2019-12-01 16:28:06,659 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:28:06,660 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:28:06,660 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:28:06,660 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:28:06,661 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575206853.9726615, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56107)>) {}.
+2019-12-01 16:28:06,661 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:28:06,661 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:28:17,044 : INFO     : server.py     : Клиент ('127.0.0.1', 56107) отключился от сервера.
+2019-12-01 16:28:17,044 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:28:17,045 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56108)> ('127.0.0.1', 56108) установлено.
+2019-12-01 16:28:17,045 : INFO     : server.py     : Клиент ('127.0.0.1', 56105) отключился от сервера.
+2019-12-01 16:28:17,045 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:28:17,045 : INFO     : server.py     : Клиент ('127.0.0.1', 56108) отключился от сервера.
+2019-12-01 16:28:17,045 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:28:17,046 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56109)> ('127.0.0.1', 56109) установлено.
+2019-12-01 16:28:17,046 : INFO     : server.py     : Клиент ('127.0.0.1', 56109) отключился от сервера.
+2019-12-01 16:28:17,046 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:28:17,046 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56110)> ('127.0.0.1', 56110) установлено.
+2019-12-01 16:28:17,047 : INFO     : server.py     : Клиент ('127.0.0.1', 56110) отключился от сервера.
+2019-12-01 16:28:17,047 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:28:17,047 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56111)> ('127.0.0.1', 56111) установлено.
+2019-12-01 16:28:17,048 : INFO     : server.py     : Клиент ('127.0.0.1', 56111) отключился от сервера.
+2019-12-01 16:28:17,048 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:28:17,048 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56114)> ('127.0.0.1', 56114) установлено.
+2019-12-01 16:28:17,049 : INFO     : server.py     : Клиент ('127.0.0.1', 56114) отключился от сервера.
+2019-12-01 16:28:17,049 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:52:59,973 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:52:59,975 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:52:59,975 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:52:59,975 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:52:59,975 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:52:59,975 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:52:59,975 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:52:59,975 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:52:59,977 : INFO     : server.py     : Сокет: <socket.socket fd=556, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:52:59,977 : INFO     : server.py     : Начинается соединение с клиентами.
+2019-12-01 16:53:16,180 : INFO     : server.py     : Запуск сервера.
+2019-12-01 16:53:16,184 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:16,185 : DEBUG    : decorator.py  : Вызов функции ARG_PARSER.
+2019-12-01 16:53:16,185 : DEBUG    : decorator.py  : Параметры функции: () {}.
+2019-12-01 16:53:16,185 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:53:16,185 : DEBUG    : decorator.py  : Функция ARG_PARSER вызвана из функции MAIN().
+2019-12-01 16:53:16,186 : INFO     : server.py     : Используется порт по умолчанию.
+2019-12-01 16:53:16,186 : INFO     : server.py     : Используется адрес по умолчанию.
+2019-12-01 16:53:16,188 : INFO     : server.py     : Сокет: <socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>.
+2019-12-01 16:53:16,299 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56257)> ('127.0.0.1', 56257) установлено.
+2019-12-01 16:53:16,325 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56258)> ('127.0.0.1', 56258) установлено.
+2019-12-01 16:53:16,326 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:16,327 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:53:16,327 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56257)>,) {}.
+2019-12-01 16:53:16,327 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:53:16,327 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:53:16,327 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575208396.2985945, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:53:16,329 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:16,330 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:53:16,330 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56257)>, {'response': 200}) {}.
+2019-12-01 16:53:16,330 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:53:16,330 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:53:16,332 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:16,332 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:53:16,332 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575208396.2985945, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=528, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56257)>) {}.
+2019-12-01 16:53:16,332 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:53:16,333 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:53:16,335 : INFO     : server.py     : Клиент ('127.0.0.1', 56257) отключился от сервера.
+2019-12-01 16:53:16,335 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:53:16,335 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=672, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56259)> ('127.0.0.1', 56259) установлено.
+2019-12-01 16:53:16,337 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:16,337 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:53:16,337 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56258)>,) {}.
+2019-12-01 16:53:16,338 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:53:16,338 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:53:16,338 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575208396.324525, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:53:16,340 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:16,340 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:53:16,341 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56258)>, {'response': 200}) {}.
+2019-12-01 16:53:16,341 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:53:16,341 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:53:16,343 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:16,344 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:53:16,344 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575208396.324525, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56258)>) {}.
+2019-12-01 16:53:16,344 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:53:16,345 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:53:16,349 : INFO     : server.py     : Клиент ('127.0.0.1', 56258) отключился от сервера.
+2019-12-01 16:53:16,349 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:53:16,350 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56260)> ('127.0.0.1', 56260) установлено.
+2019-12-01 16:53:16,352 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:16,352 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:53:16,352 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=672, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56259)>,) {}.
+2019-12-01 16:53:16,352 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:53:16,353 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:53:16,353 : DEBUG    : server.py     : Сообщение клиента: {'action': 'presence', 'time': 1575208396.3354967, 'user': {'account_name': 'Guest'}}.
+2019-12-01 16:53:16,355 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:16,356 : DEBUG    : decorator.py  : Вызов функции SEND_MESSAGE.
+2019-12-01 16:53:16,356 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=672, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56259)>, {'response': 200}) {}.
+2019-12-01 16:53:16,356 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:53:16,357 : DEBUG    : decorator.py  : Функция SEND_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:53:16,359 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:16,359 : DEBUG    : decorator.py  : Вызов функции PROCESS_CLIENT_MESSAGE.
+2019-12-01 16:53:16,359 : DEBUG    : decorator.py  : Параметры функции: ({'action': 'presence', 'time': 1575208396.3354967, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=672, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56259)>) {}.
+2019-12-01 16:53:16,360 : DEBUG    : decorator.py  : Вызов из модуля __MAIN__.
+2019-12-01 16:53:16,360 : DEBUG    : decorator.py  : Функция PROCESS_CLIENT_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:53:40,002 : INFO     : decorator.py  : Вызов декоратора LOG.
+2019-12-01 16:53:40,002 : DEBUG    : decorator.py  : Вызов функции GET_MESSAGE.
+2019-12-01 16:53:40,002 : DEBUG    : decorator.py  : Параметры функции: (<socket.socket fd=672, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56259)>,) {}.
+2019-12-01 16:53:40,002 : DEBUG    : decorator.py  : Вызов из модуля COMMON.UTILS.
+2019-12-01 16:53:40,002 : DEBUG    : decorator.py  : Функция GET_MESSAGE вызвана из функции MAIN().
+2019-12-01 16:53:40,002 : DEBUG    : server.py     : Получено сообщение от клиента: {'action': 'message', 'time': 1575208419.9987252, 'account_name': 'Guest', 'message_text': 'Привет.'}.
+2019-12-01 16:53:40,003 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56262)> ('127.0.0.1', 56262) установлено.
+2019-12-01 16:53:40,003 : INFO     : server.py     : Клиент ('127.0.0.1', 56260) отключился от сервера.
+2019-12-01 16:53:40,003 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:53:40,003 : INFO     : server.py     : Клиент ('127.0.0.1', 56262) отключился от сервера.
+2019-12-01 16:53:40,003 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:53:40,003 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56263)> ('127.0.0.1', 56263) установлено.
+2019-12-01 16:53:40,004 : INFO     : server.py     : Клиент ('127.0.0.1', 56263) отключился от сервера.
+2019-12-01 16:53:40,004 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:53:40,004 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56264)> ('127.0.0.1', 56264) установлено.
+2019-12-01 16:53:40,004 : INFO     : server.py     : Клиент ('127.0.0.1', 56264) отключился от сервера.
+2019-12-01 16:53:40,004 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:53:40,004 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56265)> ('127.0.0.1', 56265) установлено.
+2019-12-01 16:53:40,004 : INFO     : server.py     : Клиент ('127.0.0.1', 56265) отключился от сервера.
+2019-12-01 16:53:40,005 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:53:40,005 : INFO     : server.py     : Соединение с клиентом <socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56266)> ('127.0.0.1', 56266) установлено.
+2019-12-01 16:53:40,005 : INFO     : server.py     : Клиент ('127.0.0.1', 56266) отключился от сервера.
+2019-12-01 16:53:40,005 : INFO     : server.py     : Сообщение клиента удалено.
+2019-12-01 16:53:45,011 : INFO     : server.py     : Клиент ('127.0.0.1', 56259) отключился от сервера.
+2019-12-01 16:53:45,011 : INFO     : server.py     : Сообщение клиента удалено.
