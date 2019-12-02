@@ -2,23 +2,24 @@
 
 import subprocess
 
-PROCESS = []
+PROCESSES = []
 
 while True:
-    ACTION = input('Выберите действие: q - выход, s - запустить сервер и клиенты, e - закрыть все окна: ')
+    ACTION = input('Выберите действие:\n1. s -> запуск сервера и клиентов,\n2. e -> закрыть все окна,\n3. q -> выход.\n==> ')
 
     if ACTION == 'q':
         break
+
     elif ACTION == 's':
-        PROCESS.append(subprocess.Popen('python server.py',
-                                        creationflags=subprocess.CREATE_NEW_CONSOLE))
+        PROCESSES.append(subprocess.Popen('python server.py', creationflags=subprocess.CREATE_NEW_CONSOLE))
         for i in range(2):
-            PROCESS.append(subprocess.Popen('python client.py -m send',
+            PROCESSES.append(subprocess.Popen('python client.py -m send',
                                             creationflags=subprocess.CREATE_NEW_CONSOLE))
-        for i in range(5):
-            PROCESS.append(subprocess.Popen('python client.py -m listen',
+        for i in range(2):
+            PROCESSES.append(subprocess.Popen('python client.py -m listen',
                                             creationflags=subprocess.CREATE_NEW_CONSOLE))
+
     elif ACTION == 'e':
-        while PROCESS:
-            VICTIM = PROCESS.pop()
+        while PROCESSES:
+            VICTIM = PROCESSES.pop()
             VICTIM.kill()

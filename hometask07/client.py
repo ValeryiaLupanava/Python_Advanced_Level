@@ -30,12 +30,10 @@ def message_from_server(message):
     """Функция - обработчик сообщений других пользователей, поступающих с сервера"""
     if ACTION in message and message[ACTION] == MESSAGE and \
             SENDER in message and MESSAGE_TEXT in message:
-        print(f'Получено сообщение от пользователя '
-              f'{message[SENDER]}:\n{message[MESSAGE_TEXT]}')
-        CLIENT_LOGGER.info(f'Получено сообщение от пользователя '
-                    f'{message[SENDER]}:\n{message[MESSAGE_TEXT]}')
+        CLIENT_LOGGER.info(f"Получено сообщение от пользователя " \
+                           f"{message[SENDER]}:\n{message[MESSAGE_TEXT]}.")
     else:
-        CLIENT_LOGGER.error(f'Получено некорректное сообщение с сервера: {message}')
+        CLIENT_LOGGER.error(f'Получено некорректное сообщение с сервера: {message}.')
 
 
 @log
@@ -46,8 +44,8 @@ def create_message(sock, account_name='Guest'):
     message = input('Введите сообщение для отправки или \'quit\' для завершения работы: ')
     if message.lower() == 'quit':
         sock.close()
-        CLIENT_LOGGER.info('Завершение работы по команде пользователя.')
-        print('Спасибо за использование нашего сервиса!')
+        CLIENT_LOGGER.info("Завершение работы по команде пользователя." \
+                           "До свидания.")
         sys.exit(0)
     message_dict = {
         ACTION: MESSAGE,
@@ -55,7 +53,7 @@ def create_message(sock, account_name='Guest'):
         ACCOUNT_NAME: account_name,
         MESSAGE_TEXT: message
     }
-    CLIENT_LOGGER.debug(f'Сформирован словарь сообщения: {message_dict}')
+    CLIENT_LOGGER.debug(f'Сформирован словарь сообщения: {message_dict}.')
     return message_dict
 
 
@@ -69,7 +67,7 @@ def create_presence(account_name='Guest'):
             ACCOUNT_NAME: account_name
         }
     }
-    CLIENT_LOGGER.debug(f'Сформировано {PRESENCE} сообщение для пользователя {account_name}')
+    CLIENT_LOGGER.debug(f'Сформировано {PRESENCE} сообщение для пользователя {account_name}.')
     return out
 
 @log
@@ -109,16 +107,16 @@ def arg_parser():
 
     # Проверим допустим ли выбранный режим работы клиента
     if client_mode not in ('listen', 'send'):
-        CLIENT_LOGGER.critical(f'Указан недопустимый режим работы {client_mode}, '
-                        f'допустимые режимы: listen , send')
+        CLIENT_LOGGER.critical(f"Указан недопустимый режим работы {client_mode}, " \
+                               f"допустимые режимы: listen , send")
         sys.exit(1)
 
     return server_address, server_port, client_mode
 
 def main():
     '''Загружаем параметы коммандной строки'''
-    server_address, server_port, client_mode = arg_parser()
     CLIENT_LOGGER.info('Запуск клиента.')
+    server_address, server_port, client_mode = arg_parser()
     try:
         transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         transport.connect((server_address, server_port))
@@ -139,7 +137,6 @@ def main():
         sys.exit(1)
 
     # Инициализация сокета и обмен
-
     transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     transport.connect((server_address, server_port))
     CLIENT_LOGGER.info(f"Сокет: {transport}.")
@@ -172,7 +169,6 @@ def main():
             # Прием сообщений
             if client_mode == 'listen':
                 try:
-                    CLIENT_LOGGER.info(f"Режим работы: {client_mode}.")
                     message_from_server(get_message(transport))
                     CLIENT_LOGGER.debug(f"Получено сообщение от сервера: {message_from_server(get_message(transport))}.")
                 except (ConnectionResetError, ConnectionError, ConnectionAbortedError):

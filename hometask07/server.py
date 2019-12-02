@@ -125,13 +125,14 @@ def main():
         except OSError:
             pass
         else:
-            SERVER_LOGGER.info(f"Соединение с клиентом {client} {client_address} установлено.")
+            SERVER_LOGGER.debug(f"Соединение с клиентом {client} {client_address} установлено.")
             clients.append(client)
+            SERVER_LOGGER.info(f"В очереди {len(clients)} клиент(ов/а).")
 
         recv_data_lst = []
         send_data_lst = []
         err_lst = []
-        # Проверяем на наличие ждущих клиентов
+
         try:
             if clients:
                 recv_data_lst, send_data_lst, err_lst = select.select(clients, clients, [], 0)
@@ -139,20 +140,20 @@ def main():
             SERVER_LOGGER.debug(f"Системная ошибка была замечена: {OSError}.")
             pass
 
-        # принимаем сообщения и если там есть сообщения,
-        # кладём в словарь, если ошибка, исключаем клиента.
+
         if recv_data_lst:
             for client_with_message in recv_data_lst:
                 try:
+                    SERVER_LOGGER.info("Режим приема сообщений.")
                     process_client_message(get_message(client_with_message),
                                            messages, client_with_message)
-                    SERVER_LOGGER.debug(f"Получено сообщение от клиента: {get_message(client_with_message)}.")
+                    SERVER_LOGGER.info(f"Получено сообщение {messages} от клиента: {client_with_message.getpeername()}.")
                 except:
-                    SERVER_LOGGER.info(f"Клиент {client_with_message.getpeername()} отключился от сервера.")
+                    SERVER_LOGGER.debug(f"Клиент {client_with_message.getpeername()} отключился от сервера.")
                     clients.remove(client_with_message)
                     SERVER_LOGGER.info(f"Сообщение клиента удалено.")
 
-        # Отправка сообщений
+
         if messages and send_data_lst:
             message = {
                 ACTION: MESSAGE,
@@ -160,10 +161,13 @@ def main():
                 TIME: time.time(),
                 MESSAGE_TEXT: messages[0][1]
             }
+            SERVER_LOGGER.info(f"Сообщение: {message}.")
             del messages[0]
             for waiting_client in send_data_lst:
                 try:
+                    SERVER_LOGGER.info("Режим отправки сообщений.")
                     send_message(waiting_client, message)
+                    SERVER_LOGGER.info(f"Сообщение {message} отправлено клиенту {waiting_client.getpeername()}.")
                 except:
                     SERVER_LOGGER.info(f"Клиент {waiting_client.getpeername()} отключился от сервера.")
                     clients.remove(waiting_client)
